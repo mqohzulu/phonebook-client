@@ -29,29 +29,26 @@ Interfaces/
 IContactRepository.cs
 ContactRepository.cs
 Program.cs
-Setup Instructions
+
+**Setup Instructions**
 Frontend
 Install dependencies:
 bash
-Copy code
-npm install
+**npm install**
 Run the application:
 bash
-Copy code
-ng serve
+**ng serve**
 Backend
 Restore packages:
 bash
-Copy code
-dotnet restore
+**dotnet restore**
 Run the API:
 bash
-Copy code
-dotnet run
+**dotnet run**
 Technologies Used
-Frontend: Angular with Material UI
-Backend: .NET Core Web API
-Database: SQLite
-Development Servers
+Frontend: **Angular with Material UI**
+Backend: **.NET Core Web API**
+Database: **SQLite**
+Development **Servers**
 Frontend: http://localhost:4200
 Backend: http://localhost:7160
