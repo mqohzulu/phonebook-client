@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+.page {
+    padding: 2rem;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  :host {
+    display: block;
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden; 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .router-wrapper {
+    position: relative;
+    min-height: calc(100vh - 64px); 
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .search-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-field {
+    flex: 1;
+  }
+  
+  .contact-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  mat-list-item {
+    margin-bottom: 8px;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

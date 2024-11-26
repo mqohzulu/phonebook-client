@@ -1,0 +1,28 @@
+<div (keydown.enter)="accept()">
+    <h2 mat-dialog-title>{{ title }}</h2>
+    
+    <mat-dialog-content class="dialog-content">
+        <div class="content-wrapper">
+            <div class="warn-icon">
+                <mat-icon color="warn">warning</mat-icon>
+            </div>
+            <div class="message-content">
+                <span *ngIf="data.label" [innerHTML]="data.label"></span>
+                <span *ngIf="data.label2">{{data.label2}}</span>
+                <p *ngIf="data.paragraph" [innerHTML]="data.paragraph"></p>
+            </div>
+        </div>
+    </mat-dialog-content>
+
+    <mat-dialog-actions align="end">
+        <button mat-raised-button 
+                color="primary" 
+                (click)="accept()">
+            Confirm
+        </button>
+        <button mat-button 
+                (click)="cancel()">
+            Cancel
+        </button>
+    </mat-dialog-actions>
+</div>

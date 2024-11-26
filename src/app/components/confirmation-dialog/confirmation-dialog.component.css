@@ -1,0 +1,40 @@
+:host {
+    display: block;
+}
+
+.dialog-content {
+    min-width: 250px;
+    padding: 20px 24px; 
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center; 
+}
+
+.warn-icon {
+    flex-shrink: 0;
+    margin-top: 4px; 
+}
+
+.message-content {
+    flex: 1;
+    margin: 0 20px 0 0;
+}
+
+mat-dialog-title {
+    padding: 20px 24px 0; 
+    margin: 0; 
+}
+
+mat-dialog-actions {
+    padding: 16px 24px;
+    margin: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+button {
+    min-width: 80px;
+    margin-left: 8px;
+}

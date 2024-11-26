@@ -1,0 +1,48 @@
+<div class="welcome-container">
+  <mat-card class="welcome-card">
+    <div class="welcome-header">
+      <mat-icon class="welcome-icon">contact_phone</mat-icon>
+      <h1>Welcome to Your Contact Manager</h1>
+    </div>
+
+    <mat-card-content>
+      <div class="stats-container">
+        <mat-card class="stat-card">
+          <mat-icon>group</mat-icon>
+          <div class="stat-info">
+            <span class="stat-number">{{totalContacts}}</span>
+            <br> 
+            <span class="stat-label">Total Contacts</span>
+          </div>
+        </mat-card>
+      </div>
+
+      <div class="quick-actions">
+        <h2>Quick Actions</h2>
+        <div class="actions-grid">
+          <mat-card class="action-card" (click)="navigateToContacts()">
+            <mat-icon>list</mat-icon>
+            <span>View All Contacts</span>
+          </mat-card>
+          
+          <mat-card class="action-card"  (click)="openContactDialog()">
+            <mat-icon>person_add</mat-icon>
+            <span>Add New Contact</span>
+          </mat-card>
+          
+          <mat-card class="action-card" [routerLink]="['/contacts']" [queryParams]="{action: 'search'}">
+            <mat-icon>search</mat-icon>
+            <span>Search Contacts</span>
+          </mat-card>
+        </div>
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <button mat-fab extended color="primary" (click)="navigateToContacts()">
+        <mat-icon>contacts</mat-icon>
+        View Contacts
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
